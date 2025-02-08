@@ -1,0 +1,179 @@
+{% extends 'main/base.html' %}
+{% load static %}
+{% block title %}Home{% endblock %}
+{% block content %}
+<section class="main-section" style="background: 
+	linear-gradient(rgba(0, 0, 0, 0.5), rgba(35, 35, 35, 0.5)), 
+	url({{ hero_block.background_image.url }}); max-width: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	">
+	<h1>Профессиональная<br> вокалистка, помогающая<br> людям своим голосом
+		{{ hero_block.title }}</h1>
+		
+</section>
+
+
+
+<section id="golos">
+	<div class="container">
+		<div class="golos-inner">
+			<div class="golos-left">
+				<div class="golos-video">{{ about_block.iframe | safe }}</div>
+			</div>
+			<div class="golos-right">
+				<h3 class="zagolovk">Голос</h3>
+				<p class="opisanie">Равным образом, начало повседневной работы по формированию позиции, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для поэтапного и последовательного развития общества. Имеется спорная точка зрения, гласящая примерно следующее: сделанные на базе интернет-аналитики выводы заблокированы в рамках своих собственных рациональных ограничений. Сложно сказать, почему действия представителей оппозиции превращены в посмешище, хотя само их </p>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section id="talants">
+	<div class="container">
+		<div class="talants-inner">
+			<div class="talants-card">
+				<img class="talants-img" src="{% static 'img/prepod.png' %}" alt="">
+				<h3 class="talants-zag">13 ЛЕТ <br>
+					ПРЕПОДАВАНИЯ</h3>
+				<p class="talants-opis">Равным образом, начало повседневной работы по формированию позиции, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для поэтапного и последовательного развития общества. </p>
+				
+			</div>
+			<div class="talants-card talants-card2">
+				<img class="talants-img" src="{% static 'img/psy.png' %}" alt="">
+				<h3 class="talants-zag">Управляемые <br>
+					медитации</h3>
+				<p class="talants-opis">Равным образом, начало повседневной работы по формированию позиции, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для поэтапного и последовательного развития общества. </p>
+				
+			</div>
+			<div class="talants-card">
+				<img class="talants-img" src="{% static 'img/forest.png' %}" alt="">
+				<h3 class="talants-zag">Гипнотерапия<br><br></h3>
+				<p class="talants-opis">Равным образом, начало повседневной работы по формированию позиции, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для поэтапного и последовательного развития общества. </p>
+				
+			</div>
+		</div>
+
+	</div>
+</section>
+
+
+<section id="pesni">
+	<div class="container">
+		<div class="pesni-inner">
+			<div class="pesni-left">
+				<div class="pesni-zag">Авторские песни </div>
+				<div class="pesni-opis">Равным образом, начало повседневной работы по формированию позиции, а также свежий взгляд на привычные вещи — безусловно открывает новые горизонты для поэтапного и последовательного развития общества. Имеется спорная точка зрения, гласящая примерно следующее: сделанные на базе интернет-аналитики выводы заблокированы в рамках своих собственных рациональных ограничений. Сложно сказать, почему действия представителей оппозиции превращены в посмешище, хотя само их </div>
+			</div>
+			<div class="pesni-right">
+				<iframe src="https://vkvideo.ru/video_ext.php?oid=-221124863&id=456239019&hd=2&hash=839e4e487258e4db" width="100%" height="300" allow="autoplay; encrypted-media; fullscreen; picture-in-picture; screen-wake-lock;" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+
+	</div>
+</section>
+
+<section id="block">
+	<div class="container">
+		<div class="zagolovok-bloka">
+			<h3>В свободное время Анна пишет<br> картины под псевдонимом “Pевица”</h3>
+		</div>
+	</div>
+</section>
+
+<section id="kartini">
+	<div class="container">
+		<div class="kartini-inner">
+			<div class="kartini-card">
+				<div id="content">
+					<h2></h2>
+					<a href="#image1" class="wiggle"><img src="{% static 'img/kartina1.jpg' %}"/></a>
+					<div class="lightbox short-animate" id="image1">
+					  <img class="long-animate" src="{% static 'img/kartina1.jpg' %}"/>
+					</div>
+					<div id="lightbox-controls" class="short-animate">
+					  <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a>
+					</div>
+				  </div>
+				  <h3 class="content-zag">Виноагент. 08.2024</h3>
+			</div>
+			<div class="kartini-card">
+				<div id="content">
+					<h2></h2>
+					<a href="#image2" class="wiggle"><img src="http://selvaraj.me/codepen/images/lightbox-image-1.jpg"/></a>
+					<div class="lightbox short-animate" id="image2">
+					  <img class="long-animate" src="http://selvaraj.me/codepen/images/lightbox-image-2.jpg"/>
+					</div>
+					<div id="lightbox-controls" class="short-animate">
+					  <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a>
+					</div>
+				  </div>
+			</div>
+			<div class="kartini-card">
+				<div id="content">
+					<h2></h2>
+					<a href="#image3" class="wiggle"><img src="http://selvaraj.me/codepen/images/lightbox-image-1.jpg"/></a>
+					<div class="lightbox short-animate" id="image3">
+					  <img class="long-animate" src="http://selvaraj.me/codepen/images/lightbox-image-2.jpg"/>
+					</div>
+					<div id="lightbox-controls" class="short-animate">
+					  <a id="close-lightbox" class="long-animate" href="#!">Close Lightbox</a>
+					</div>
+				  </div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+
+
+
+<button class="music-btn" onclick="initAudio()">Включить музыку</button>
+
+    <script>
+        var audioContext;
+        var audioBuffer;
+        var source;
+
+        // Загрузка аудиофайла
+        function loadAudio() {
+            fetch('{% static 'music/Mir.wav' %}')
+                .then(response => response.arrayBuffer())
+                .then(data => audioContext.decodeAudioData(data))
+                .then(buffer => {
+                    audioBuffer = buffer;
+                });
+        }
+
+        // Инициализация аудио
+        function initAudio() {
+            if (!audioContext) {
+                audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                loadAudio();
+            }
+
+            if (source) {
+                source.stop();
+                source = null;
+                document.querySelector("button").textContent = "Включить музыку";
+            } else {
+                source = audioContext.createBufferSource();
+                source.buffer = audioBuffer;
+                source.loop = true;
+                source.connect(audioContext.destination);
+                source.start();
+                document.querySelector("button").textContent = "Остановить музыку";
+            }
+        }
+    </script>
+
+
+
+
+
+
+{% endblock %}

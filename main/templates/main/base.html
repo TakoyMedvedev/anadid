@@ -1,0 +1,31 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Site{% endblock %}</title>
+    <link rel="stylesheet" href="https://getuikit.com/assets/uikit/dist/css/uikit.css?nc=2583">
+    <link rel="stylesheet" href="{% static '/css/style.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    {% include 'main/header.html' %}
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    {% include 'main/footer.html' %}
+
+    <script src="{% static 'js/script.js' %}"></script>
+    <script src="https://getuikit.com/assets/uikit/dist/js/uikit.js?nc=2583"></script>
+    <script src="https://getuikit.com/assets/uikit/dist/js/uikit-icons.js?nc=2583"></script>
+    
+</body>
+</html>
